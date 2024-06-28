@@ -20,6 +20,8 @@ services:
      - ./vote:/usr/local/app
     ports:
       - "80:80"
+    deploy:
+      replicas: 3
     networks:
       - front-tier
       - back-tier
